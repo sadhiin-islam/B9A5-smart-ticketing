@@ -96,7 +96,8 @@
                             </div >
                             <div class="flex">
                                <div> <img src="images/seat-green.png"></div>
-                                <p><span>8</span> Seat Lift</p>
+                                <p id="seat-number">8</p>
+                                <p>Seat Lift</p>
                             </div>
                         </div>
                         <div class="flex justify-between">
@@ -119,7 +120,7 @@
                                 <img src="images/fare.png">
                             </div>
                             <div>
-                                <h1 class="font-bold"><span style="font-size: x-large; font-style: oblique;">55</span><span style="font-size: x-large;">0 Taka</span></h1>
+                                <h1 class="price font-bold"><span style="font-size: x-large; font-style: oblique;">55</span><span style="font-size: x-large;">0 Taka</span></h1>
                                 <p class="px-5">Per Seat</p>
                             </div> 
                         </div>
@@ -135,7 +136,7 @@
                         <div class="grid grid-cols-2" >
                             <div class="flex items-center">
                                 <img src="images/seat-gray.png">
-                                <h1>Available</h1>
+                                <h1 class="seat">Available</h1>
                             </div>
                             <div class="flex items-center gap-2 py-5">
                                 <img src="images/seat-green-filled.png">
@@ -158,17 +159,17 @@
             <div class="flex-1 ">
                     <div class="flex text-center items-center space-x-4 p-2">
                         <p>A</p>
-                        <button class=" px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A1</button>
-                        <button class=" px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A2</button>
-                        <button class=" px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A3</button>
-                        <button class=" px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A4</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A1</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A2</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A3</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">A4</button>
                     </div>
                     <div class="flex text-center items-center space-x-4 p-2">
                         <p>B</p>
-                        <button class="px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B1</button>
-                        <button class="px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B2</button>
-                        <button class="px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B3</button>
-                        <button class="px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B4</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B1</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B2</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B3</button>
+                        <button class="seat-btn px-6 py-2 text-xl hover:bg-gray-400 bg-gray-200 rounded-lg">B4</button>
                     </div>
             </div>
             <div class="flex-1 px-16">
@@ -182,22 +183,12 @@
                         <p class="">price</p>
                     </div>
                     <div class="flex justify-between py-4">
-                        <p class="">C2</p>
-                        <p class="">Economoy</p>
-                        <p class="">550</p>
-                    </div>
-                    <div class="flex justify-between py-4">
-                        <p class="">C2</p>
-                        <p class="">Economoy</p>
-                        <p class="">550</p>
-                    </div>
-                    <div class="flex justify-between py-4">
                         <p class="">total price</p>
-                        <p class="">BDT<span>0</span></p>
+                        <p class="">BDT<span id="total-price">0</span></p>
                     </div>
                     <div class="py-4">
                         <input type="text" placeholder="Have any copupon?">
-                        <button>Apply</button>
+                        <button class="apply">Apply</button>
                     </div>
                     <div class="flex justify-between py-4">
                         <p class="">grand price</p>
@@ -224,6 +215,6 @@
             </div>
         </section>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
